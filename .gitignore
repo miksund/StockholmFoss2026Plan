@@ -1,0 +1,105 @@
+# ===================
+# AI Code Assistants
+# ===================
+
+# Claude Code
+CLAUDE.md
+.claude/
+
+# Cursor
+.cursorrules
+.cursorignore
+.cursor/
+
+# Aider
+.aider*
+.aider.chat.history.md
+.aider.input.history
+.aider.tags.cache.v3/
+
+# GitHub Copilot
+.copilot/
+.github/copilot-instructions.md
+
+# Codeium
+.codeium/
+
+# Continue.dev
+.continue/
+.continuerc.json
+
+# Windsurf / Codeium
+.windsurfrules
+
+# Amazon Q / CodeWhisperer
+.aws/amazonq/
+
+# Generic AI assistant files
+.ai/
+.llm/
+*.prompt
+.prompts/
+
+# ===================
+# OS Generated
+# ===================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ===================
+# Editors & IDEs
+# ===================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# ===================
+# Python
+# ===================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ===================
+# Node.js
+# ===================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn/
+
+# ===================
+# Logs & Temp
+# ===================
+*.log
+logs/
+tmp/
+temp/
