@@ -1,0 +1,40 @@
+{% comment %}
+  Schedule track component
+  Usage: {% include schedule-track.html track="main" talks=page.main_track %}
+
+  Required parameters:
+  - track: Track identifier (main, infrastructure, development, community, nordic)
+  - talks: Array of talk objects with: time, title, speaker, speaker_slug, description
+
+  Optional:
+  - room: Room name to display
+{% endcomment %}
+
+<div class="schedule-track track-{{ include.track }}" id="track-{{ include.track }}">
+  {% if include.room %}
+  <h3 class="track-room">{{ include.room }}</h3>
+  {% endif %}
+
+  <div class="track-talks">
+    {% for talk in include.talks %}
+    <div class="talk-item">
+      <div class="talk-time">{{ talk.time }}</div>
+      <div class="talk-details">
+        <h4 class="talk-title">{{ talk.title }}</h4>
+        {% if talk.speaker %}
+        <p class="talk-speaker">
+          {% if talk.speaker_slug %}
+          <a href="{{ '/speakers/' | append: talk.speaker_slug | append: '/' | relative_url }}">{{ talk.speaker }}</a>
+          {% else %}
+          {{ talk.speaker }}
+          {% endif %}
+        </p>
+        {% endif %}
+        {% if talk.description %}
+        <p class="talk-description">{{ talk.description }}</p>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

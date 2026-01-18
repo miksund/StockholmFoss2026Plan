@@ -1,0 +1,79 @@
+# StockholmFoss 2026 - Jekyll Configuration
+
+title: StockholmFoss 2026
+description: Nordic Open Source Conference - Building Sovereign, Sustainable Digital Futures
+baseurl: ""
+url: ""
+
+# Event details
+event:
+  date: "Saturday, May 23rd, 2026"
+  date_short: "May 23, 2026"
+  location: "KTH Royal Institute of Technology"
+  address: "Brinellvägen 8, 114 28 Stockholm"
+  theme: "Nordic Open Source: Building Sovereign, Sustainable Digital Futures"
+  tbana: "Tekniska högskolan (Red line)"
+
+# Social & Contact
+contact:
+  email: "info@stockholmfoss.se"
+  mastodon: "@stockholmfoss@mastodon.nu"
+
+# Sponsors
+sponsors:
+  platinum:
+    - name: "Redpill Linpro"
+      url: "https://redpill-linpro.com"
+    - name: "Open Source Sweden"
+      url: "https://opensourcesweden.se"
+  gold:
+    - name: "Mullvad VPN"
+      url: "https://mullvad.net"
+    - name: "Polar"
+      url: "https://polar.sh"
+    - name: "Vinnova"
+      url: "https://vinnova.se"
+  silver:
+    - name: "DIGG"
+      url: "https://digg.se"
+    - name: "Internetstiftelsen"
+      url: "https://internetstiftelsen.se"
+    - name: "KTH"
+      url: "https://kth.se"
+  community:
+    - name: "Ubuntu Sweden"
+    - name: "FSCONS"
+    - name: "Linux User Group Stockholm"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Collections
+collections:
+  speakers:
+    output: true
+    permalink: /speakers/:slug/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "speakers"
+    values:
+      layout: "speaker"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - STOCKHOLMFOSS_2026_SCHEDULE.md
+  - speakers/
+  - "*.py"
+  - __pycache__/

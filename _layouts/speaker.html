@@ -1,0 +1,90 @@
+---
+layout: default
+---
+
+<article class="speaker-profile">
+  <header class="speaker-header">
+    <div class="container">
+      <div class="speaker-header-content">
+        <div class="speaker-avatar-large" data-initials="{{ page.name | split: ' ' | map: 'first' | join: '' | upcase | truncate: 2, '' }}">
+          {{ page.name | split: ' ' | map: 'first' | join: '' | upcase | truncate: 2, '' }}
+        </div>
+        <div class="speaker-header-info">
+          <h1>{{ page.name }}</h1>
+          {% if page.title %}
+          <p class="speaker-title">{{ page.title }}</p>
+          {% endif %}
+          {% if page.location %}
+          <p class="speaker-location">{{ page.location }}</p>
+          {% endif %}
+          {% if page.track %}
+          <span class="track-badge track-{{ page.track | slugify }}">{{ page.track }}</span>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="speaker-content">
+    <div class="container-narrow">
+      {% if page.talk_title %}
+      <section class="speaker-talk">
+        <h2>Talk at StockholmFoss 2026</h2>
+        <div class="talk-card featured">
+          <h3>{{ page.talk_title }}</h3>
+          {% if page.talk_time or page.talk_room %}
+          <p class="talk-meta">
+            {% if page.talk_time %}<span class="talk-time">{{ page.talk_time }}</span>{% endif %}
+            {% if page.talk_room %}<span class="talk-room">{{ page.talk_room }}</span>{% endif %}
+          </p>
+          {% endif %}
+          {% if page.talk_description %}
+          <p>{{ page.talk_description }}</p>
+          {% endif %}
+        </div>
+      </section>
+      {% endif %}
+
+      {% if page.bio %}
+      <section class="speaker-bio">
+        <h2>About</h2>
+        <p>{{ page.bio }}</p>
+      </section>
+      {% endif %}
+
+      {{ content }}
+
+      {% if page.github or page.mastodon or page.twitter or page.website %}
+      <section class="speaker-links">
+        <h2>Connect</h2>
+        <div class="social-links">
+          {% if page.github %}
+          <a href="https://{{ page.github }}" class="social-link github" target="_blank" rel="noopener">
+            GitHub
+          </a>
+          {% endif %}
+          {% if page.mastodon %}
+          <a href="https://{{ page.mastodon | split: '@' | last }}/{{ page.mastodon | split: '@' | slice: 0, 2 | join: '@' }}" class="social-link mastodon" target="_blank" rel="noopener me">
+            Mastodon
+          </a>
+          {% endif %}
+          {% if page.twitter %}
+          <a href="https://twitter.com/{{ page.twitter | remove: '@' }}" class="social-link twitter" target="_blank" rel="noopener">
+            Twitter
+          </a>
+          {% endif %}
+          {% if page.website %}
+          <a href="https://{{ page.website }}" class="social-link website" target="_blank" rel="noopener">
+            Website
+          </a>
+          {% endif %}
+        </div>
+      </section>
+      {% endif %}
+
+      <nav class="speaker-nav">
+        <a href="{{ '/speakers/' | relative_url }}" class="back-link">&larr; All Speakers</a>
+      </nav>
+    </div>
+  </div>
+</article>

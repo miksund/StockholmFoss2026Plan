@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule | StockholmFoss 2026</title>
+  <meta name="description" content="Nordic Open Source Conference - Building Sovereign, Sustainable Digital Futures">
+
+  <!-- Preconnect for faster font loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- System font stack for Nordic minimal design -->
+  <style>
+    :root {
+      --primary: #1a365d;
+      --primary-light: #2c5282;
+      --secondary: #e2e8f0;
+      --accent: #3182ce;
+      --text: #1a202c;
+      --text-muted: #4a5568;
+      --background: #ffffff;
+      --background-alt: #f7fafc;
+      --border: #e2e8f0;
+      --success: #38a169;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--background);
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .container-narrow {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+  </style>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+  <div class="container">
+    <nav class="site-nav">
+      <a href="/" class="site-logo">
+        <span class="logo-text">StockholmFoss</span>
+        <span class="logo-year">2026</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="/" >Home</a></li>
+        <li><a href="/schedule/" class="active">Schedule</a></li>
+        <li><a href="/speakers/" >Speakers</a></li>
+        <li><a href="/practical/" >Practical Info</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <main>
+    <header class="page-header">
+  <div class="container">
+    <h1>Schedule</h1>
+    <p class="subtitle">Saturday, May 23rd, 2026 - KTH Royal Institute of Technology</p>
+  </div>
+</header>
+
+<div class="page-content">
+  <div class="container">
+
+<div class="schedule-tabs" role="tablist">
+  <button class="schedule-tab active" onclick="showTrack('all')" role="tab">All Tracks</button>
+  <button class="schedule-tab" onclick="showTrack('main')" role="tab">Main</button>
+  <button class="schedule-tab" onclick="showTrack('infrastructure')" role="tab">Infrastructure</button>
+  <button class="schedule-tab" onclick="showTrack('development')" role="tab">Development</button>
+  <button class="schedule-tab" onclick="showTrack('community')" role="tab">Community</button>
+  <button class="schedule-tab" onclick="showTrack('nordic')" role="tab">Nordic Focus</button>
+</div>
+
+<div id="track-all" class="schedule-track active">
+
+## 09:00 - Opening Keynote
+{: .timeline-time}
+
+<div class="talk-item">
+  <div class="talk-time">09:00</div>
+  <div class="talk-details">
+    <h4 class="talk-title">"FOSS in the Age of AI Agents and Digital Sovereignty"</h4>
+    <p class="talk-speaker"><a href="/speakers/olle-jonsson/">Olle Jonsson</a>, Maintainer &amp; Open Source Advocate</p>
+    <p class="talk-description">As AI coding assistants rewrite our patches and corporations race to dominate AI infrastructure, what does software freedom mean in 2026? A reflection on maintaining human agency, Nordic values of transparency, and why community-driven development matters more than ever.</p>
+    <span class="track-badge track-keynote">Keynote - Aula Magna</span>
+  </div>
+</div>
+
+## 10:00 - Keynote
+{: .timeline-time}
+
+<div class="talk-item">
+  <div class="talk-time">10:00</div>
+  <div class="talk-details">
+    <h4 class="talk-title">"From Uppsala to the World: 30 Years of MySQL and the Swedish Open Source Legacy"</h4>
+    <p class="talk-speaker"><a href="/speakers/kajsa-lindstrom/">Kajsa Lindström</a>, Database Historian &amp; Former MySQL AB Engineer</p>
+    <p class="talk-description">Sweden gave the world MySQL, Spotify's open source contributions, and a culture of pragmatic engineering. This talk traces the threads from Monty Widenius's Uppsala apartment to today's European Open Source Consortium, asking: what can we learn from Nordic FOSS history?</p>
+    <span class="track-badge track-keynote">Keynote - Aula Magna</span>
+  </div>
+</div>
+
+## 11:00 - Parallel Sessions
+{: .timeline-time}
+
+<div class="timeline-talks">
+
+<div class="timeline-talk">
+<h4>"Supply Chain Security for the Paranoid Nordic"</h4>
+<p class="talk-speaker"><a href="/speakers/sigrid-holmberg/">Sigrid Holmberg</a></p>
+<span class="track-badge track-main">Main - Aula Magna</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Kubernetes the Swedish Way: Lessons from Telia and Ericsson"</h4>
+<p class="talk-speaker"><a href="/speakers/fredrik-lund/">Fredrik Lund</a></p>
+<span class="track-badge track-infrastructure">Infrastructure - Sal A</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Rust in the Swedish Embedded Industry"</h4>
+<p class="talk-speaker"><a href="/speakers/maja-sandstrom/">Maja Sandström</a></p>
+<span class="track-badge track-development">Development - Sal B</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Surviving as an Open Source Maintainer"</h4>
+<p class="talk-speaker">Panel: Swedish Maintainers</p>
+<span class="track-badge track-community">Community - Sal C</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Swedish Language Technology: Open Models and Datasets"</h4>
+<p class="talk-speaker"><a href="/speakers/ylva-fredriksson/">Dr. Ylva Fredriksson</a></p>
+<span class="track-badge track-nordic">Nordic - Sal D</span>
+</div>
+
+</div>
+
+## 11:30 - Parallel Sessions
+{: .timeline-time}
+
+<div class="timeline-talks">
+
+<div class="timeline-talk">
+<h4>"Wayland on the Swedish Desktop: State of the Union"</h4>
+<p class="talk-speaker"><a href="/speakers/magnus-eriksson/">Magnus Eriksson</a></p>
+<span class="track-badge track-main">Main - Aula Magna</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"PostgreSQL Performance Tuning for Nordic Winters"</h4>
+<p class="talk-speaker"><a href="/speakers/bjorn-svensson/">Björn Svensson</a></p>
+<span class="track-badge track-infrastructure">Infrastructure - Sal A</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Python Type Hints: From Optional to Essential"</h4>
+<p class="talk-speaker"><a href="/speakers/oscar-franzen/">Oscar Franzén</a></p>
+<span class="track-badge track-development">Development - Sal B</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"The EU Cyber Resilience Act: What Open Source Developers Need to Know"</h4>
+<p class="talk-speaker"><a href="/speakers/maria-westerlund/">Maria Westerlund</a></p>
+<span class="track-badge track-community">Community - Sal C</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Open Data in Swedish Municipalities"</h4>
+<p class="talk-speaker"><a href="/speakers/karl-pettersson/">Karl Pettersson</a></p>
+<span class="track-badge track-nordic">Nordic - Sal D</span>
+</div>
+
+</div>
+
+## 12:00 - Parallel Sessions
+{: .timeline-time}
+
+<div class="timeline-talks">
+
+<div class="timeline-talk">
+<h4>"The Right to Repair Meets Open Hardware"</h4>
+<p class="talk-speaker"><a href="/speakers/linnea-forsberg/">Linnéa Forsberg</a></p>
+<span class="track-badge track-main">Main - Aula Magna</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"NixOS in Production: A Swedish Success Story"</h4>
+<p class="talk-speaker"><a href="/speakers/emil-karlsson/">Emil Karlsson</a></p>
+<span class="track-badge track-infrastructure">Infrastructure - Sal A</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Building Local-First Apps with CRDTs"</h4>
+<p class="talk-speaker"><a href="/speakers/nils-andersson/">Nils Andersson</a></p>
+<span class="track-badge track-development">Development - Sal B</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Building Inclusive Open Source Communities"</h4>
+<p class="talk-speaker"><a href="/speakers/fatima-hassan/">Fatima Hassan</a></p>
+<span class="track-badge track-community">Community - Sal C</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Nordic Identity: BankID, Freja, and Open Standards"</h4>
+<p class="talk-speaker"><a href="/speakers/henrik-soderlund/">Henrik Söderlund</a></p>
+<span class="track-badge track-nordic">Nordic - Sal D</span>
+</div>
+
+</div>
+
+## 13:00 - Lunch Break / Fika
+{: .timeline-time}
+
+<div class="talk-item">
+  <div class="talk-time">13:00</div>
+  <div class="talk-details">
+    <h4 class="talk-title">Lunch Break</h4>
+    <p class="talk-description">Coffee, tea, and kanelbullar provided. Time to network and explore the venue.</p>
+  </div>
+</div>
+
+## 14:00 - Parallel Sessions
+{: .timeline-time}
+
+<div class="timeline-talks">
+
+<div class="timeline-talk">
+<h4>"Running Sovereign AI on Swedish Soil"</h4>
+<p class="talk-speaker"><a href="/speakers/henrik-nilsson/">Dr. Henrik Nilsson</a></p>
+<span class="track-badge track-main">Main - Aula Magna</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"The Matrix Protocol: Building Federated Chat for Swedish Organizations"</h4>
+<p class="talk-speaker"><a href="/speakers/sofia-nordin/">Sofia Nordin</a></p>
+<span class="track-badge track-infrastructure">Infrastructure - Sal A</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"WebAssembly Beyond the Browser"</h4>
+<p class="talk-speaker"><a href="/speakers/elin-johansson/">Elin Johansson</a></p>
+<span class="track-badge track-development">Development - Sal B</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Open Source Governance Models: From BDFL to Foundation"</h4>
+<p class="talk-speaker"><a href="/speakers/thomas-eriksson/">Thomas Eriksson</a></p>
+<span class="track-badge track-community">Community - Sal C</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Säkerhet First: Security Practices in Swedish FOSS"</h4>
+<p class="talk-speaker"><a href="/speakers/sara-lindgren/">Sara Lindgren</a></p>
+<span class="track-badge track-nordic">Nordic - Sal D</span>
+</div>
+
+</div>
+
+## 14:30 - Parallel Sessions
+{: .timeline-time}
+
+<div class="timeline-talks">
+
+<div class="timeline-talk">
+<h4>"Git's Next Decade: Lessons from the Kernel"</h4>
+<p class="talk-speaker"><a href="/speakers/astrid-bergman/">Astrid Bergman</a></p>
+<span class="track-badge track-main">Main - Aula Magna</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Observability with OpenTelemetry: From Startup to Scale"</h4>
+<p class="talk-speaker"><a href="/speakers/viktor-pettersson/">Viktor Pettersson</a></p>
+<span class="track-badge track-infrastructure">Infrastructure - Sal A</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Open Source LLM Tooling: Building AI Applications Responsibly"</h4>
+<p class="talk-speaker"><a href="/speakers/simon-ekstrom/">Dr. Simon Ekström</a></p>
+<span class="track-badge track-development">Development - Sal B</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Starting an Open Source Program Office in Sweden"</h4>
+<p class="talk-speaker"><a href="/speakers/johan-bergstrom/">Johan Bergström</a></p>
+<span class="track-badge track-community">Community - Sal C</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Open Source in Swedish Defense: Yes, Really"</h4>
+<p class="talk-speaker"><a href="/speakers/martin-akesson/">Martin Åkesson</a></p>
+<span class="track-badge track-nordic">Nordic - Sal D</span>
+</div>
+
+</div>
+
+## 15:00 - Parallel Sessions
+{: .timeline-time}
+
+<div class="timeline-talks">
+
+<div class="timeline-talk">
+<h4>"Digital Public Goods: Nordic Cooperation in Open Source"</h4>
+<p class="talk-speaker">Representatives from DIGG</p>
+<span class="track-badge track-main">Main - Aula Magna</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Ansible Automation in Swedish Healthcare"</h4>
+<p class="talk-speaker"><a href="/speakers/kristina-berg/">Kristina Berg</a></p>
+<span class="track-badge track-infrastructure">Infrastructure - Sal A</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Contributing to Firefox: A Swedish Perspective"</h4>
+<p class="talk-speaker"><a href="/speakers/ida-mansson/">Ida Månsson</a></p>
+<span class="track-badge track-development">Development - Sal B</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"The Fediverse and Digital Public Spaces"</h4>
+<p class="talk-speaker"><a href="/speakers/lena-sundstrom/">Lena Sundström</a></p>
+<span class="track-badge track-community">Community - Sal C</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Climate Tech and Open Source: Swedish Innovations"</h4>
+<p class="talk-speaker"><a href="/speakers/emma-gustafsson/">Emma Gustafsson</a></p>
+<span class="track-badge track-nordic">Nordic - Sal D</span>
+</div>
+
+</div>
+
+## 15:30 - Parallel Sessions
+{: .timeline-time}
+
+<div class="timeline-talks">
+
+<div class="timeline-talk">
+<h4>"LibreOffice in Swedish Schools: A Progress Report"</h4>
+<p class="talk-speaker"><a href="/speakers/anna-lindqvist/">Anna Lindqvist</a></p>
+<span class="track-badge track-main">Main - Aula Magna</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Running Your Own Email in 2026: Still Possible?"</h4>
+<p class="talk-speaker"><a href="/speakers/lars-erik-oberg/">Lars-Erik Öberg</a></p>
+<span class="track-badge track-infrastructure">Infrastructure - Sal A</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Neovim and the Modern Terminal Workflow"</h4>
+<p class="talk-speaker"><a href="/speakers/jesper-oberg/">Jesper Öberg</a></p>
+<span class="track-badge track-development">Development - Sal B</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"Teaching Open Source in Swedish Universities"</h4>
+<p class="talk-speaker"><a href="/speakers/anders-lindgren/">Prof. Anders Lindgren</a></p>
+<span class="track-badge track-community">Community - Sal C</span>
+</div>
+
+<div class="timeline-talk">
+<h4>"The Sami Language and Open Source: Digitizing Indigenous Languages"</h4>
+<p class="talk-speaker"><a href="/speakers/anders-nils-eira/">Anders-Nils Eira</a></p>
+<span class="track-badge track-nordic">Nordic - Sal D</span>
+</div>
+
+</div>
+
+## 16:00 - Lightning Talks
+{: .timeline-time}
+
+<div class="talk-item">
+  <div class="talk-time">16:00</div>
+  <div class="talk-details">
+    <h4 class="talk-title">Lightning Talks - Aula Magna</h4>
+    <p class="talk-description">Ten rapid-fire talks, 5 minutes each, no questions. A showcase of Swedish creativity, side projects, and insights.</p>
+    <span class="track-badge track-lightning">Lightning Talks</span>
+  </div>
+</div>
+
+<div class="lightning-talks">
+
+<div class="lightning-talk">
+<h4>"I Made a Keyboard Firmware for Swedish Developers"</h4>
+<p class="talk-speaker"><a href="/speakers/anton-lindqvist/">Anton Lindqvist</a></p>
+</div>
+
+<div class="lightning-talk">
+<h4>"Blåhaj-as-a-Service: Ridiculous Side Projects"</h4>
+<p class="talk-speaker"><a href="/speakers/jenny-nilsson/">Jenny Nilsson</a></p>
+</div>
+
+<div class="lightning-talk">
+<h4>"Why I Switched from macOS to Fedora"</h4>
+<p class="talk-speaker"><a href="/speakers/marcus-holm/">Marcus Holm</a></p>
+</div>
+
+<div class="lightning-talk">
+<h4>"One Line of Code That Saved Our Company"</h4>
+<p class="talk-speaker">Anonymous</p>
+</div>
+
+<div class="lightning-talk">
+<h4>"Open Source Beehive Monitoring"</h4>
+<p class="talk-speaker"><a href="/speakers/gunnar-lindstrom/">Gunnar Lindström</a></p>
+</div>
+
+<div class="lightning-talk">
+<h4>"The State of OpenStreetMap in Sweden"</h4>
+<p class="talk-speaker"><a href="/speakers/maria-olsson/">Maria Olsson</a></p>
+</div>
+
+<div class="lightning-talk">
+<h4>"Contributing to Open Source During Parental Leave"</h4>
+<p class="talk-speaker"><a href="/speakers/daniel-sjoberg/">Daniel Sjöberg</a></p>
+</div>
+
+<div class="lightning-talk">
+<h4>"Swedish Public Transport APIs: The Good, Bad, and Ugly"</h4>
+<p class="talk-speaker"><a href="/speakers/hanna-eriksson/">Hanna Eriksson</a></p>
+</div>
+
+<div class="lightning-talk">
+<h4>"Home Assistant and Swedish Energy Prices"</h4>
+<p class="talk-speaker"><a href="/speakers/per-lundgren/">Per Lundgren</a></p>
+</div>
+
+<div class="lightning-talk">
+<h4>"Why Your README Needs Swedish Translation"</h4>
+<p class="talk-speaker"><a href="/speakers/ingrid-sandberg/">Ingrid Sandberg</a></p>
+</div>
+
+</div>
+
+## 17:00 - Closing Keynote
+{: .timeline-time}
+
+<div class="talk-item">
+  <div class="talk-time">17:00</div>
+  <div class="talk-details">
+    <h4 class="talk-title">"Funding the Commons: New Models for Open Source Sustainability"</h4>
+    <p class="talk-speaker"><a href="/speakers/erik-andersson/">Erik Andersson</a>, Founder of Polar</p>
+    <p class="talk-description">Open source maintainers burn out while billion-dollar companies profit from their work. Polar and similar platforms are experimenting with direct funding models. But is money enough? A frank discussion about what sustainable open source actually requires.</p>
+    <span class="track-badge track-keynote">Closing Keynote - Aula Magna</span>
+  </div>
+</div>
+
+## 18:00 - After-Party
+{: .timeline-time}
+
+<div class="talk-item">
+  <div class="talk-time">18:00</div>
+  <div class="talk-details">
+    <h4 class="talk-title">Mingel &amp; After-party</h4>
+    <p class="talk-description">Join us at Nymble Student Union for the after-party. First drink free, sponsored by Polar and Mullvad VPN.</p>
+  </div>
+</div>
+
+</div>
+
+<script>
+function showTrack(track) {
+  // Update tab styles
+  document.querySelectorAll('.schedule-tab').forEach(tab => tab.classList.remove('active'));
+  event.target.classList.add('active');
+
+  // Show/hide tracks
+  document.querySelectorAll('.schedule-track').forEach(t => t.classList.remove('active'));
+  document.getElementById('track-' + track).classList.add('active');
+}
+</script>
+
+  </div>
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="container">
+    <section class="footer-sponsors">
+      <h3>Sponsors</h3>
+      <div class="sponsor-tiers">
+        <div class="sponsor-tier platinum">
+          <h4>Platinum</h4>
+          <div class="sponsor-logos">
+            
+            <a href="https://redpill-linpro.com" target="_blank" rel="noopener" class="sponsor-link">Redpill Linpro</a>
+            
+            <a href="https://opensourcesweden.se" target="_blank" rel="noopener" class="sponsor-link">Open Source Sweden</a>
+            
+          </div>
+        </div>
+        <div class="sponsor-tier gold">
+          <h4>Gold</h4>
+          <div class="sponsor-logos">
+            
+            <a href="https://mullvad.net" target="_blank" rel="noopener" class="sponsor-link">Mullvad VPN</a>
+            
+            <a href="https://polar.sh" target="_blank" rel="noopener" class="sponsor-link">Polar</a>
+            
+            <a href="https://vinnova.se" target="_blank" rel="noopener" class="sponsor-link">Vinnova</a>
+            
+          </div>
+        </div>
+        <div class="sponsor-tier silver">
+          <h4>Silver</h4>
+          <div class="sponsor-logos">
+            
+            <a href="https://digg.se" target="_blank" rel="noopener" class="sponsor-link">DIGG</a>
+            
+            <a href="https://internetstiftelsen.se" target="_blank" rel="noopener" class="sponsor-link">Internetstiftelsen</a>
+            
+            <a href="https://kth.se" target="_blank" rel="noopener" class="sponsor-link">KTH</a>
+            
+          </div>
+        </div>
+        <div class="sponsor-tier community">
+          <h4>Community Partners</h4>
+          <div class="sponsor-logos">
+            
+            <span class="sponsor-name">Ubuntu Sweden</span>
+            
+            <span class="sponsor-name">FSCONS</span>
+            
+            <span class="sponsor-name">Linux User Group Stockholm</span>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-info">
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>
+          <a href="mailto:info@stockholmfoss.se">info@stockholmfoss.se</a><br>
+          <a href="https://mastodon.nu/@stockholmfoss" target="_blank" rel="noopener me">@stockholmfoss@mastodon.nu</a>
+        </p>
+      </div>
+
+      <div class="footer-event">
+        <h3>StockholmFoss 2026</h3>
+        <p>
+          Saturday, May 23rd, 2026<br>
+          KTH Royal Institute of Technology<br>
+          Brinellvägen 8, 114 28 Stockholm
+        </p>
+      </div>
+
+      <div class="footer-motto">
+        <p class="motto">"Öppen källkod för alla"</p>
+        <p class="motto-translation">Open source for everyone</p>
+      </div>
+    </section>
+
+    <div class="footer-bottom">
+      <p>StockholmFoss is a non-profit event organized by volunteers. All speakers donate their time.</p>
+      <p>No surveillance, no corporate capture, just FOSS.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

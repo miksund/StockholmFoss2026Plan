@@ -1,0 +1,70 @@
+<footer class="site-footer">
+  <div class="container">
+    <section class="footer-sponsors">
+      <h3>Sponsors</h3>
+      <div class="sponsor-tiers">
+        <div class="sponsor-tier platinum">
+          <h4>Platinum</h4>
+          <div class="sponsor-logos">
+            {% for sponsor in site.sponsors.platinum %}
+            <a href="{{ sponsor.url }}" target="_blank" rel="noopener" class="sponsor-link">{{ sponsor.name }}</a>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="sponsor-tier gold">
+          <h4>Gold</h4>
+          <div class="sponsor-logos">
+            {% for sponsor in site.sponsors.gold %}
+            <a href="{{ sponsor.url }}" target="_blank" rel="noopener" class="sponsor-link">{{ sponsor.name }}</a>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="sponsor-tier silver">
+          <h4>Silver</h4>
+          <div class="sponsor-logos">
+            {% for sponsor in site.sponsors.silver %}
+            <a href="{{ sponsor.url }}" target="_blank" rel="noopener" class="sponsor-link">{{ sponsor.name }}</a>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="sponsor-tier community">
+          <h4>Community Partners</h4>
+          <div class="sponsor-logos">
+            {% for sponsor in site.sponsors.community %}
+            <span class="sponsor-name">{{ sponsor.name }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-info">
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>
+          <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a><br>
+          <a href="https://mastodon.nu/{{ site.contact.mastodon | remove: '@mastodon.nu' }}" target="_blank" rel="noopener me">{{ site.contact.mastodon }}</a>
+        </p>
+      </div>
+
+      <div class="footer-event">
+        <h3>{{ site.title }}</h3>
+        <p>
+          {{ site.event.date }}<br>
+          {{ site.event.location }}<br>
+          {{ site.event.address }}
+        </p>
+      </div>
+
+      <div class="footer-motto">
+        <p class="motto">"Öppen källkod för alla"</p>
+        <p class="motto-translation">Open source for everyone</p>
+      </div>
+    </section>
+
+    <div class="footer-bottom">
+      <p>StockholmFoss is a non-profit event organized by volunteers. All speakers donate their time.</p>
+      <p>No surveillance, no corporate capture, just FOSS.</p>
+    </div>
+  </div>
+</footer>

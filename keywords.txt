@@ -1,0 +1,241 @@
+# StockholmFoss 2026 - Google Monitoring Keywords
+# Generated from STOCKHOLMFOSS_2026_SCHEDULE.md
+
+## CONFERENCE NAME
+StockholmFoss 2026
+StockholmFoss
+StockholmFoss conference
+StockholmFoss KTH
+Stockholm open source conference 2026
+Stockholm FOSS event
+"StockholmFoss" Sweden
+Nordic open source conference 2026
+
+## SPEAKERS
+
+# Keynote Speakers
+Olle Jonsson
+Kajsa Lindström
+Erik Andersson
+
+# Main Track
+Sigrid Holmberg
+Magnus Eriksson
+Linnéa Forsberg
+Henrik Nilsson
+Astrid Bergman
+Anna Lindqvist
+
+# Infrastructure Track
+Fredrik Lund
+Björn Svensson
+Emil Karlsson
+Sofia Nordin
+Viktor Pettersson
+Kristina Berg
+Lars-Erik Öberg
+
+# Development Track
+Maja Sandström
+Oscar Franzén
+Nils Andersson
+Elin Johansson
+Simon Ekström
+Ida Månsson
+Jesper Öberg
+
+# Community Track
+Maria Westerlund
+Fatima Hassan
+Thomas Eriksson
+Johan Bergström
+Lena Sundström
+Anders Lindgren
+
+# Nordic Focus Track
+Ylva Fredriksson
+Karl Pettersson
+Henrik Söderlund
+Sara Lindgren
+Martin Åkesson
+Emma Gustafsson
+Anders-Nils Eira
+
+# Lightning Talks
+Anton Lindqvist
+Jenny Nilsson
+Marcus Holm
+Gunnar Lindström
+Maria Olsson
+Daniel Sjöberg
+Hanna Eriksson
+Per Lundgren
+Ingrid Sandberg
+
+# Organizing Committee
+Mikael Sundberg
+Helena Österberg
+Johan Thelin
+Rikard Fröberg
+Saga Lindgren
+Pontus Åkerlund
+
+## SPEAKER SEARCH QUERIES (with context)
+Olle Jonsson open source
+Kajsa Lindström MySQL
+Erik Andersson Polar
+Sigrid Holmberg SBOM
+Magnus Eriksson KDE
+Linnéa Forsberg repair café
+Henrik Nilsson RISE AI
+Astrid Bergman Git
+Anna Lindqvist Skolverket
+Fredrik Lund Kubernetes
+Björn Svensson PostgreSQL
+Emil Karlsson Mullvad
+Sofia Nordin Matrix Element
+Viktor Pettersson SRE OpenTelemetry
+Kristina Berg Region Stockholm
+Lars-Erik Öberg sysadmin email
+Maja Sandström Volvo Rust
+Oscar Franzén Python
+Nils Andersson CRDT
+Elin Johansson Fermyon WebAssembly
+Simon Ekström AI ethics
+Ida Månsson Mozilla Firefox
+Jesper Öberg Neovim
+Maria Westerlund Open Source Sweden
+Fatima Hassan Django Girls Stockholm
+Thomas Eriksson Apache Foundation
+Johan Bergström H&M OSPO
+Lena Sundström Mastodon.nu
+Anders Lindgren Uppsala University
+Ylva Fredriksson AI Sweden
+Karl Pettersson Open Knowledge Sweden
+Henrik Söderlund BankID
+Sara Lindgren security researcher
+Martin Åkesson FOI Sweden
+Emma Gustafsson ClimateAction.tech
+Anders-Nils Eira Sami Parliament
+Anton Lindqvist keyboard firmware
+Jenny Nilsson developer Sweden
+Marcus Holm Fedora
+Gunnar Lindström beehive
+Maria Olsson OpenStreetMap
+Daniel Sjöberg open source
+Hanna Eriksson public transport API
+Per Lundgren Home Assistant
+Ingrid Sandberg README
+
+## THEMES - DIGITAL SOVEREIGNTY & AI
+digital sovereignty open source
+sovereign AI Sweden
+FOSS AI agents 2026
+open source AI coding assistants
+Swedish AI infrastructure open source
+GPT-SW3 Swedish language model
+Nordic AI open source
+Berzelius supercomputer open source
+Llama Mistral Sweden
+
+## THEMES - OPEN SOURCE SUSTAINABILITY
+open source maintainer sustainability
+open source funding models
+Polar open source funding
+open source burnout maintainers
+Nordic open source sustainability
+
+## THEMES - SECURITY & SUPPLY CHAIN
+SBOM software bill of materials Sweden
+supply chain security open source
+package attestations open source
+reproducible builds Sweden
+EU Cyber Resilience Act open source
+CRA open source developers
+Swedish FOSS security practices
+
+## THEMES - LINUX & DESKTOP
+Wayland Linux desktop Sweden
+KDE Plasma 6 Sweden
+GNOME 47 Wayland
+Linux desktop accessibility Sweden
+Swedish keyboard Linux
+NixOS production Sweden
+Mullvad VPN NixOS
+
+## THEMES - INFRASTRUCTURE & DEVOPS
+Kubernetes Sweden enterprise
+GitOps Flux Sweden
+PostgreSQL Nordic data center
+Matrix protocol Sweden
+Element Matrix federated chat
+OpenTelemetry Sweden
+Ansible healthcare automation
+self-hosted email 2026
+Postfix Dovecot rspamd
+
+## THEMES - DEVELOPMENT & PROGRAMMING
+Rust embedded automotive Sweden
+Rust Volvo safety-critical
+Python type hints production
+CRDT local-first apps
+Yjs Automerge Sweden
+WebAssembly serverless edge
+open source LLM tooling
+LangChain Ollama local
+Firefox contribution Nordic
+Neovim LSP terminal workflow
+Git SHA-256 monorepo
+
+## THEMES - COMMUNITY & GOVERNANCE
+open source governance models Sweden
+OSPO Sweden enterprise
+open source program office Nordic
+open source diversity inclusion Nordic
+Django Girls Stockholm
+Fediverse Sweden
+Mastodon Sweden instance
+open source Code of Conduct
+open source university education
+
+## THEMES - NORDIC & SWEDISH FOCUS
+Swedish language technology NLP
+Swedish NLP open source
+Nordic language corpus
+open data Sweden municipalities
+BankID open standards
+Freja digital identity Nordic
+open source Swedish defense FOI
+climate tech open source Sweden
+Sami language open source
+indigenous language digitization Nordic
+
+## THEMES - HARDWARE & IOT
+right to repair open hardware EU
+open hardware repair café Sweden
+open source firmware repair
+Home Assistant Swedish energy prices
+open source beehive monitoring
+Swedish keyboard firmware open source
+
+## THEMES - PUBLIC SECTOR
+LibreOffice Swedish schools
+Swedish municipalities open source
+DIGG digital government Sweden
+Nordic digital public goods
+Swedish public transport API open source
+OpenStreetMap Sweden
+
+## THEMES - SWEDISH TECH COMPANIES
+Spotify open source
+Klarna open source
+Swedish open source history
+MySQL Sweden Uppsala
+Monty Widenius legacy
+Telia Ericsson Kubernetes
+
+## COMBINED MONITORING QUERIES
+"StockholmFoss" OR "Stockholm FOSS" OR "Stockholm open source"
+Nordic open source 2026
+Swedish open source conference
+KTH open source event

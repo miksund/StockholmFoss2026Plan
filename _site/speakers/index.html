@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speakers | StockholmFoss 2026</title>
+  <meta name="description" content="Nordic Open Source Conference - Building Sovereign, Sustainable Digital Futures">
+
+  <!-- Preconnect for faster font loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- System font stack for Nordic minimal design -->
+  <style>
+    :root {
+      --primary: #1a365d;
+      --primary-light: #2c5282;
+      --secondary: #e2e8f0;
+      --accent: #3182ce;
+      --text: #1a202c;
+      --text-muted: #4a5568;
+      --background: #ffffff;
+      --background-alt: #f7fafc;
+      --border: #e2e8f0;
+      --success: #38a169;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--background);
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .container-narrow {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+  </style>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+  <div class="container">
+    <nav class="site-nav">
+      <a href="/" class="site-logo">
+        <span class="logo-text">StockholmFoss</span>
+        <span class="logo-year">2026</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="/" >Home</a></li>
+        <li><a href="/schedule/" >Schedule</a></li>
+        <li><a href="/speakers/" class="active">Speakers</a></li>
+        <li><a href="/practical/" >Practical Info</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <main>
+    <header class="page-header">
+  <div class="container">
+    <h1>Speakers</h1>
+    <p class="subtitle">50+ speakers sharing their expertise in open source</p>
+  </div>
+</header>
+
+<div class="page-content">
+  <div class="container">
+
+<div class="schedule-tabs" role="tablist">
+  <button class="schedule-tab active" onclick="filterSpeakers('all')" role="tab">All Speakers</button>
+  <button class="schedule-tab" onclick="filterSpeakers('keynote')" role="tab">Keynotes</button>
+  <button class="schedule-tab" onclick="filterSpeakers('main')" role="tab">Main</button>
+  <button class="schedule-tab" onclick="filterSpeakers('infrastructure')" role="tab">Infrastructure</button>
+  <button class="schedule-tab" onclick="filterSpeakers('development')" role="tab">Development</button>
+  <button class="schedule-tab" onclick="filterSpeakers('community')" role="tab">Community</button>
+  <button class="schedule-tab" onclick="filterSpeakers('nordic-focus')" role="tab">Nordic</button>
+  <button class="schedule-tab" onclick="filterSpeakers('lightning')" role="tab">Lightning</button>
+</div>
+
+<section class="section">
+  <h2>Keynote Speakers</h2>
+  <div class="speakers-grid" data-track="keynote">
+    
+    
+    <a href="/speakers/erik-andersson/" class="speaker-card" data-track="keynote">
+      <div class="speaker-avatar"></div>
+      <h3>Erik Andersson</h3>
+      <p class="speaker-title">Founder &amp; CEO at Polar | Open Source Sustainability Advocate | Serial Entrepr...</p>
+      
+      <span class="track-badge track-keynote">Keynote</span>
+      
+    </a>
+    
+    <a href="/speakers/kajsa-lindstrom/" class="speaker-card" data-track="keynote">
+      <div class="speaker-avatar"></div>
+      <h3>Kajsa Lindström</h3>
+      <p class="speaker-title">Database Historian | Former MySQL AB Engineer | Tech Historian &amp; Author</p>
+      
+      <span class="track-badge track-keynote">Keynote</span>
+      
+    </a>
+    
+    <a href="/speakers/olle-jonsson/" class="speaker-card" data-track="keynote">
+      <div class="speaker-avatar"></div>
+      <h3>Olle Jonsson</h3>
+      <p class="speaker-title">Open Source Maintainer | Ruby &amp; Go Developer | Digital Rights Advocate</p>
+      
+      <span class="track-badge track-keynote">Keynote</span>
+      
+    </a>
+    
+  </div>
+</section>
+
+<section class="section section-alt">
+  <h2>All Speakers</h2>
+  <div class="speakers-grid" id="speakers-grid">
+    
+    
+    
+    <a href="/speakers/anders-nils-eira/" class="speaker-card" data-track="nordic-focus">
+      <div class="speaker-avatar"></div>
+      <h3>Anders-Nils Eira</h3>
+      <p class="speaker-title">IT Coordinator | Sami Parliament (Sámediggi) | Indigenous Language Technology...</p>
+      
+      <span class="track-badge track-nordic-focus">Nordic Focus</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/anna-lindqvist/" class="speaker-card" data-track="main">
+      <div class="speaker-avatar"></div>
+      <h3>Anna Lindqvist</h3>
+      <p class="speaker-title">Digital Learning Consultant | Skolverket | LibreOffice in Education Specialist</p>
+      
+      <span class="track-badge track-main">Main</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/anton-lindqvist/" class="speaker-card" data-track="lightning">
+      <div class="speaker-avatar"></div>
+      <h3>Anton Lindqvist</h3>
+      <p class="speaker-title">Systems Developer | Keyboard Firmware Developer | QMK Contributor</p>
+      
+      <span class="track-badge track-lightning">Lightning</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/astrid-bergman/" class="speaker-card" data-track="main">
+      <div class="speaker-avatar"></div>
+      <h3>Astrid Bergman</h3>
+      <p class="speaker-title">Git Core Contributor | Version Control Specialist | Developer Tools Engineer ...</p>
+      
+      <span class="track-badge track-main">Main</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/bjorn-svensson/" class="speaker-card" data-track="infrastructure">
+      <div class="speaker-avatar"></div>
+      <h3>Björn Svensson</h3>
+      <p class="speaker-title">PostgreSQL Contributor | Senior DBA | Database Performance Consultant</p>
+      
+      <span class="track-badge track-infrastructure">Infrastructure</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/daniel-sjoberg/" class="speaker-card" data-track="lightning">
+      <div class="speaker-avatar"></div>
+      <h3>Daniel Sjöberg</h3>
+      <p class="speaker-title">Software Developer | Open Source Contributor | Parental Leave Productivity Re...</p>
+      
+      <span class="track-badge track-lightning">Lightning</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/henrik-nilsson/" class="speaker-card" data-track="main">
+      <div class="speaker-avatar"></div>
+      <h3>Dr. Henrik Nilsson</h3>
+      <p class="speaker-title">Senior Researcher in AI Infrastructure | RISE Research Institutes of Sweden |...</p>
+      
+      <span class="track-badge track-main">Main</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/simon-ekstrom/" class="speaker-card" data-track="development">
+      <div class="speaker-avatar"></div>
+      <h3>Dr. Simon Ekström</h3>
+      <p class="speaker-title">AI Ethics Researcher | Responsible AI Advocate | Lund University | LLM Applic...</p>
+      
+      <span class="track-badge track-development">Development</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/ylva-fredriksson/" class="speaker-card" data-track="nordic-focus">
+      <div class="speaker-avatar"></div>
+      <h3>Dr. Ylva Fredriksson</h3>
+      <p class="speaker-title">Senior Researcher | AI Sweden | Swedish Language Technology &amp; NLP Specialist</p>
+      
+      <span class="track-badge track-nordic-focus">Nordic Focus</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/elin-johansson/" class="speaker-card" data-track="development">
+      <div class="speaker-avatar"></div>
+      <h3>Elin Johansson</h3>
+      <p class="speaker-title">Software Engineer | WebAssembly Advocate | Fermyon Contributor | Edge Computi...</p>
+      
+      <span class="track-badge track-development">Development</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/emil-karlsson/" class="speaker-card" data-track="infrastructure">
+      <div class="speaker-avatar"></div>
+      <h3>Emil Karlsson</h3>
+      <p class="speaker-title">Infrastructure Engineer | Mullvad VPN | NixOS Advocate | Privacy-First Operat...</p>
+      
+      <span class="track-badge track-infrastructure">Infrastructure</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/emma-gustafsson/" class="speaker-card" data-track="nordic-focus">
+      <div class="speaker-avatar"></div>
+      <h3>Emma Gustafsson</h3>
+      <p class="speaker-title">Climate Tech Developer | Open Source for Sustainability | ClimateAction.tech ...</p>
+      
+      <span class="track-badge track-nordic-focus">Nordic Focus</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/fatima-hassan/" class="speaker-card" data-track="community">
+      <div class="speaker-avatar"></div>
+      <h3>Fatima Hassan</h3>
+      <p class="speaker-title">Community Organizer | Django Girls Stockholm | Diversity in Tech Advocate</p>
+      
+      <span class="track-badge track-community">Community</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/fredrik-lund/" class="speaker-card" data-track="infrastructure">
+      <div class="speaker-avatar"></div>
+      <h3>Fredrik Lund</h3>
+      <p class="speaker-title">Platform Engineer | Kubernetes Specialist | Telia Company | Cloud Native Advo...</p>
+      
+      <span class="track-badge track-infrastructure">Infrastructure</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/gunnar-lindstrom/" class="speaker-card" data-track="lightning">
+      <div class="speaker-avatar"></div>
+      <h3>Gunnar Lindström</h3>
+      <p class="speaker-title">Beekeeper | Hardware Hacker | Open Source Beehive Monitoring Pioneer</p>
+      
+      <span class="track-badge track-lightning">Lightning</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/hanna-eriksson/" class="speaker-card" data-track="lightning">
+      <div class="speaker-avatar"></div>
+      <h3>Hanna Eriksson</h3>
+      <p class="speaker-title">Transit Data Developer | Public Transport API Critic | Open Data Advocate</p>
+      
+      <span class="track-badge track-lightning">Lightning</span>
+      
+    </a>
+    
+    
+    
+    
+    
+    <a href="/speakers/henrik-soderlund/" class="speaker-card" data-track="nordic-focus">
+      <div class="speaker-avatar"></div>
+      <h3>Henrik Söderlund</h3>
+      <p class="speaker-title">Digital Identity Consultant | Nordic eID Expert | Open Standards Advocate</p>
+      
+      <span class="track-badge track-nordic-focus">Nordic Focus</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/ida-mansson/" class="speaker-card" data-track="development">
+      <div class="speaker-avatar"></div>
+      <h3>Ida Månsson</h3>
+      <p class="speaker-title">Mozilla Contributor | Firefox Developer | Browser Privacy Advocate</p>
+      
+      <span class="track-badge track-development">Development</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/ingrid-sandberg/" class="speaker-card" data-track="lightning">
+      <div class="speaker-avatar"></div>
+      <h3>Ingrid Sandberg</h3>
+      <p class="speaker-title">Technical Writer | Localization Advocate | Swedish Open Source Translation Co...</p>
+      
+      <span class="track-badge track-lightning">Lightning</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/jenny-nilsson/" class="speaker-card" data-track="lightning">
+      <div class="speaker-avatar"></div>
+      <h3>Jenny Nilsson</h3>
+      <p class="speaker-title">Backend Developer | Creator of Ridiculous Side Projects | Blåhaj Enthusiast</p>
+      
+      <span class="track-badge track-lightning">Lightning</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/jesper-oberg/" class="speaker-card" data-track="development">
+      <div class="speaker-avatar"></div>
+      <h3>Jesper Öberg</h3>
+      <p class="speaker-title">Developer Advocate | Neovim Contributor | Terminal Workflow Evangelist</p>
+      
+      <span class="track-badge track-development">Development</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/johan-bergstrom/" class="speaker-card" data-track="community">
+      <div class="speaker-avatar"></div>
+      <h3>Johan Bergström</h3>
+      <p class="speaker-title">Open Source Program Office Lead | H&amp;M Group | Corporate Open Source Strategy</p>
+      
+      <span class="track-badge track-community">Community</span>
+      
+    </a>
+    
+    
+    
+    
+    
+    <a href="/speakers/karin-ostberg/" class="speaker-card" data-track="main">
+      <div class="speaker-avatar"></div>
+      <h3>Karin Östberg</h3>
+      <p class="speaker-title">Head of Open Source Strategy | DIGG (Swedish Agency for Digital Government) |...</p>
+      
+      <span class="track-badge track-main">Main</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/karl-pettersson/" class="speaker-card" data-track="nordic-focus">
+      <div class="speaker-avatar"></div>
+      <h3>Karl Pettersson</h3>
+      <p class="speaker-title">Executive Director | Open Knowledge Sweden | Open Data Advocate</p>
+      
+      <span class="track-badge track-nordic-focus">Nordic Focus</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/kristina-berg/" class="speaker-card" data-track="infrastructure">
+      <div class="speaker-avatar"></div>
+      <h3>Kristina Berg</h3>
+      <p class="speaker-title">Infrastructure Architect | Region Stockholm IT | Healthcare Automation Specia...</p>
+      
+      <span class="track-badge track-infrastructure">Infrastructure</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/lars-erik-oberg/" class="speaker-card" data-track="infrastructure">
+      <div class="speaker-avatar"></div>
+      <h3>Lars-Erik Öberg</h3>
+      <p class="speaker-title">Senior Sysadmin | Self-Hosted Email Survivor | Open Source Purist</p>
+      
+      <span class="track-badge track-infrastructure">Infrastructure</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/lena-sundstrom/" class="speaker-card" data-track="community">
+      <div class="speaker-avatar"></div>
+      <h3>Lena Sundström</h3>
+      <p class="speaker-title">Mastodon Instance Administrator | Fediverse Advocate | Digital Public Spaces ...</p>
+      
+      <span class="track-badge track-community">Community</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/linnea-forsberg/" class="speaker-card" data-track="main">
+      <div class="speaker-avatar"></div>
+      <h3>Linnéa Forsberg</h3>
+      <p class="speaker-title">Right to Repair Activist | Repair Café Stockholm Founder | Circular Economy A...</p>
+      
+      <span class="track-badge track-main">Main</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/magnus-eriksson/" class="speaker-card" data-track="main">
+      <div class="speaker-avatar"></div>
+      <h3>Magnus Eriksson</h3>
+      <p class="speaker-title">KDE Developer &amp; Linux Desktop Advocate | Plasma Contributor | Accessibility S...</p>
+      
+      <span class="track-badge track-main">Main</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/maja-sandstrom/" class="speaker-card" data-track="development">
+      <div class="speaker-avatar"></div>
+      <h3>Maja Sandström</h3>
+      <p class="speaker-title">Embedded Systems Engineer | Rust Advocate | Volvo Cars | Automotive Safety Ex...</p>
+      
+      <span class="track-badge track-development">Development</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/marcus-holm/" class="speaker-card" data-track="lightning">
+      <div class="speaker-avatar"></div>
+      <h3>Marcus Holm</h3>
+      <p class="speaker-title">Frontend Developer | Recent Linux Convert | Documenting the Journey</p>
+      
+      <span class="track-badge track-lightning">Lightning</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/maria-olsson/" class="speaker-card" data-track="lightning">
+      <div class="speaker-avatar"></div>
+      <h3>Maria Olsson</h3>
+      <p class="speaker-title">GIS Specialist | OpenStreetMap Sweden | Mapping Advocate</p>
+      
+      <span class="track-badge track-lightning">Lightning</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/maria-westerlund/" class="speaker-card" data-track="community">
+      <div class="speaker-avatar"></div>
+      <h3>Maria Westerlund</h3>
+      <p class="speaker-title">Executive Director | Open Source Sweden | Policy &amp; Advocacy for Swedish FOSS ...</p>
+      
+      <span class="track-badge track-community">Community</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/martin-akesson/" class="speaker-card" data-track="nordic-focus">
+      <div class="speaker-avatar"></div>
+      <h3>Martin Åkesson</h3>
+      <p class="speaker-title">Senior Researcher | FOI (Swedish Defence Research Agency) | Defense Open Sour...</p>
+      
+      <span class="track-badge track-nordic-focus">Nordic Focus</span>
+      
+    </a>
+    
+    
+    
+    
+    
+    <a href="/speakers/nils-andersson/" class="speaker-card" data-track="development">
+      <div class="speaker-avatar"></div>
+      <h3>Nils Andersson</h3>
+      <p class="speaker-title">Software Architect | Local-First Advocate | CRDT Specialist | Building Offlin...</p>
+      
+      <span class="track-badge track-development">Development</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/oscar-franzen/" class="speaker-card" data-track="development">
+      <div class="speaker-avatar"></div>
+      <h3>Oscar Franzén</h3>
+      <p class="speaker-title">Python Core Contributor | Senior Software Engineer | Type Systems Enthusiast</p>
+      
+      <span class="track-badge track-development">Development</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/per-lundgren/" class="speaker-card" data-track="lightning">
+      <div class="speaker-avatar"></div>
+      <h3>Per Lundgren</h3>
+      <p class="speaker-title">Home Automation Enthusiast | Home Assistant Contributor | Swedish Energy Opti...</p>
+      
+      <span class="track-badge track-lightning">Lightning</span>
+      
+    </a>
+    
+    
+    
+    
+    
+    <a href="/speakers/anders-lindgren/" class="speaker-card" data-track="community">
+      <div class="speaker-avatar"></div>
+      <h3>Prof. Anders Lindgren</h3>
+      <p class="speaker-title">Professor of Computer Science | Uppsala University | Open Source in Education...</p>
+      
+      <span class="track-badge track-community">Community</span>
+      
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a href="/speakers/sara-lindgren/" class="speaker-card" data-track="nordic-focus">
+      <div class="speaker-avatar"></div>
+      <h3>Sara Lindgren</h3>
+      <p class="speaker-title">Security Researcher | Open Source Security Specialist | Vulnerability Researcher</p>
+      
+      <span class="track-badge track-nordic-focus">Nordic Focus</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/sigrid-holmberg/" class="speaker-card" data-track="main">
+      <div class="speaker-avatar"></div>
+      <h3>Sigrid Holmberg</h3>
+      <p class="speaker-title">SBOM Specialist &amp; Security Architect | Swedish Tax Agency (Skatteverket) | Su...</p>
+      
+      <span class="track-badge track-main">Main</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/sofia-nordin/" class="speaker-card" data-track="infrastructure">
+      <div class="speaker-avatar"></div>
+      <h3>Sofia Nordin</h3>
+      <p class="speaker-title">Matrix/Element Consultant | Federated Communications Specialist | Open Source...</p>
+      
+      <span class="track-badge track-infrastructure">Infrastructure</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/thomas-eriksson/" class="speaker-card" data-track="community">
+      <div class="speaker-avatar"></div>
+      <h3>Thomas Eriksson</h3>
+      <p class="speaker-title">Apache Software Foundation Member | Open Source Governance Expert | Long-Time...</p>
+      
+      <span class="track-badge track-community">Community</span>
+      
+    </a>
+    
+    
+    
+    <a href="/speakers/viktor-pettersson/" class="speaker-card" data-track="infrastructure">
+      <div class="speaker-avatar"></div>
+      <h3>Viktor Pettersson</h3>
+      <p class="speaker-title">SRE Lead | OpenTelemetry Contributor | Observability Engineer | Building Vend...</p>
+      
+      <span class="track-badge track-infrastructure">Infrastructure</span>
+      
+    </a>
+    
+    
+  </div>
+</section>
+
+<section class="section">
+  <h2>Organizing Committee</h2>
+  <div class="speakers-grid">
+    
+    
+    <a href="/speakers/helena-osterberg/" class="speaker-card" data-track="organizer">
+      <div class="speaker-avatar"></div>
+      <h3>Helena Österberg</h3>
+      <p class="speaker-title">StockholmFoss Program Committee | Engineering Manager | Conference Curator</p>
+    </a>
+    
+    <a href="/speakers/johan-thelin/" class="speaker-card" data-track="organizer">
+      <div class="speaker-avatar"></div>
+      <h3>Johan Thelin</h3>
+      <p class="speaker-title">StockholmFoss Program Committee | Qt Expert | Author &amp; Educator</p>
+    </a>
+    
+    <a href="/speakers/mikael-sundberg/" class="speaker-card" data-track="organizer">
+      <div class="speaker-avatar"></div>
+      <h3>Mikael Sundberg</h3>
+      <p class="speaker-title">StockholmFoss Lead Organizer | Open Source Community Builder | Conference Vet...</p>
+    </a>
+    
+    <a href="/speakers/pontus-akerlund/" class="speaker-card" data-track="organizer">
+      <div class="speaker-avatar"></div>
+      <h3>Pontus Åkerlund</h3>
+      <p class="speaker-title">StockholmFoss A/V Team Lead | Video Producer | Open Source A/V Advocate</p>
+    </a>
+    
+    <a href="/speakers/rikard-froberg/" class="speaker-card" data-track="organizer">
+      <div class="speaker-avatar"></div>
+      <h3>Rikard Fröberg</h3>
+      <p class="speaker-title">StockholmFoss Program Committee | Community Manager | Open Source Advocate</p>
+    </a>
+    
+    <a href="/speakers/saga-lindgren/" class="speaker-card" data-track="organizer">
+      <div class="speaker-avatar"></div>
+      <h3>Saga Lindgren</h3>
+      <p class="speaker-title">StockholmFoss Volunteers Coordinator | Event Professional | Community Builder</p>
+    </a>
+    
+  </div>
+</section>
+
+<script>
+function filterSpeakers(track) {
+  // Update tab styles
+  document.querySelectorAll('.schedule-tab').forEach(tab => tab.classList.remove('active'));
+  event.target.classList.add('active');
+
+  // Filter cards
+  document.querySelectorAll('.speaker-card').forEach(card => {
+    if (track === 'all' || card.dataset.track === track) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
+
+  </div>
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="container">
+    <section class="footer-sponsors">
+      <h3>Sponsors</h3>
+      <div class="sponsor-tiers">
+        <div class="sponsor-tier platinum">
+          <h4>Platinum</h4>
+          <div class="sponsor-logos">
+            
+            <a href="https://redpill-linpro.com" target="_blank" rel="noopener" class="sponsor-link">Redpill Linpro</a>
+            
+            <a href="https://opensourcesweden.se" target="_blank" rel="noopener" class="sponsor-link">Open Source Sweden</a>
+            
+          </div>
+        </div>
+        <div class="sponsor-tier gold">
+          <h4>Gold</h4>
+          <div class="sponsor-logos">
+            
+            <a href="https://mullvad.net" target="_blank" rel="noopener" class="sponsor-link">Mullvad VPN</a>
+            
+            <a href="https://polar.sh" target="_blank" rel="noopener" class="sponsor-link">Polar</a>
+            
+            <a href="https://vinnova.se" target="_blank" rel="noopener" class="sponsor-link">Vinnova</a>
+            
+          </div>
+        </div>
+        <div class="sponsor-tier silver">
+          <h4>Silver</h4>
+          <div class="sponsor-logos">
+            
+            <a href="https://digg.se" target="_blank" rel="noopener" class="sponsor-link">DIGG</a>
+            
+            <a href="https://internetstiftelsen.se" target="_blank" rel="noopener" class="sponsor-link">Internetstiftelsen</a>
+            
+            <a href="https://kth.se" target="_blank" rel="noopener" class="sponsor-link">KTH</a>
+            
+          </div>
+        </div>
+        <div class="sponsor-tier community">
+          <h4>Community Partners</h4>
+          <div class="sponsor-logos">
+            
+            <span class="sponsor-name">Ubuntu Sweden</span>
+            
+            <span class="sponsor-name">FSCONS</span>
+            
+            <span class="sponsor-name">Linux User Group Stockholm</span>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-info">
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>
+          <a href="mailto:info@stockholmfoss.se">info@stockholmfoss.se</a><br>
+          <a href="https://mastodon.nu/@stockholmfoss" target="_blank" rel="noopener me">@stockholmfoss@mastodon.nu</a>
+        </p>
+      </div>
+
+      <div class="footer-event">
+        <h3>StockholmFoss 2026</h3>
+        <p>
+          Saturday, May 23rd, 2026<br>
+          KTH Royal Institute of Technology<br>
+          Brinellvägen 8, 114 28 Stockholm
+        </p>
+      </div>
+
+      <div class="footer-motto">
+        <p class="motto">"Öppen källkod för alla"</p>
+        <p class="motto-translation">Open source for everyone</p>
+      </div>
+    </section>
+
+    <div class="footer-bottom">
+      <p>StockholmFoss is a non-profit event organized by volunteers. All speakers donate their time.</p>
+      <p>No surveillance, no corporate capture, just FOSS.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
