@@ -2,8 +2,8 @@
 
 title: StockholmFoss 2026
 description: Nordic Open Source Conference - Building Sovereign, Sustainable Digital Futures
-baseurl: ""
-url: ""
+baseurl: "/StockholmFoss2026Plan"
+url: "https://miksund.github.io"
 
 # Event details
 event:
